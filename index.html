@@ -17,7 +17,11 @@
 	      body { margin:0; padding:0; }
 	      #map { position:absolute; top:0; bottom:0; width:100%; }
 	  </style>
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+		<link href="main.css" type="text/css" rel="stylesheet">
+		<script type='text/javascript' src='./GEOJSON/assignment3.js'></script>
 	</head>
 	<body class="is-preload">
 
@@ -144,7 +148,7 @@
 						<h2>In Context</h2>
 						<a href="assignment3.html">Here's the map</a>
 
-						<div id='map'></div>
+						<div id='map'>
 				<script>
 				mapboxgl.accessToken = 'pk.eyJ1IjoidGhlYnVsbGZpZ2h0ZXIiLCJhIjoiY2psZG1rdHBoMGNydDNwbzlpb2FrMTI2NyJ9.G3ldlerYErMg2i-DjDAupw';
 				var map = new mapboxgl.Map({
@@ -187,6 +191,7 @@
 				        });
 				    });
 				    </script>
+						</div>
 
 
 				  </div>
